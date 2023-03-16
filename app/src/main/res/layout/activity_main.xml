@@ -1,18 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/temperature" />
+
     <TextView
+        android:id="@+id/celsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Celsius:"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/celsius_degrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Degrees"
+        android:inputType="numberPassword"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
+
+    <TextView
+        android:id="@+id/farenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Farenheit:"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
+
+    <EditText
+        android:id="@+id/farenheit_degrees"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Degrees"
+        android:textSize="26sp"
+        android:layout_margin="16sp"
+        />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="20sp"
+        android:text="Convert"
+        android:textSize="16sp" />
+
+</LinearLayout>

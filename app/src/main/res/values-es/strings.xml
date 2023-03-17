@@ -1,3 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Celsius</string>
+    <string name="celsius_degrees">Grados</string>
+    <string name="fahrenheit_degrees">Grados</string>
+    <string name="convert_button">Convertir</string>
+    <string name="celsius">Celsius:</string>
+    <string name="fahrenheit">Fahrenheit:</string>
+    <string name="thermometer_description">Thermometer</string>
 </resources>

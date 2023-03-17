@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,13 +17,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         EditText celsiusDegrees = findViewById(R.id.celsius_degrees);
-        EditText fahrenheitDegrees = findViewById(R.id.farenheit_degrees);
+        TextView fahrenheitDegrees = findViewById(R.id.fahrenheit_degrees);
         fahrenheitDegrees.setEnabled(false);
         Button convertButton = findViewById(R.id.convert_button);
 
         convertButton.setOnClickListener(v -> {
-            String result = String.valueOf(setFahrenheitDegrees(celsiusDegrees.getText().toString()));
-            fahrenheitDegrees.setText(String.format("%s °F", result));
+            if(!celsiusDegrees.getText().toString().isEmpty()) {
+                double degrees = setFahrenheitDegrees(celsiusDegrees.getText().toString());
+                String result = String.valueOf(Math.ceil(degrees));
+                fahrenheitDegrees.setText(String.format("%s °F", result));
+            } else {
+                fahrenheitDegrees.setText("");
+                Toast.makeText(this,"Don't forget to type something",
+                        Toast.LENGTH_SHORT).show();
+            }
         });
     }
 

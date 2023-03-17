@@ -11,13 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
+        android:contentDescription="@string/thermometer_description"
         android:src="@drawable/temperature" />
 
     <TextView
         android:id="@+id/celsius"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Celsius:"
+        android:text="@string/celsius"
         android:textSize="26sp"
         android:layout_margin="16sp"
         />
@@ -26,26 +27,26 @@
         android:id="@+id/celsius_degrees"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Degrees"
-        android:inputType="numberPassword"
+        android:hint="@string/celsius_degrees"
+        android:inputType="number"
         android:textSize="26sp"
         android:layout_margin="16sp"
         />
 
     <TextView
-        android:id="@+id/farenheit"
+        android:id="@+id/fahrenheit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Farenheit:"
+        android:text="@string/fahrenheit"
         android:textSize="26sp"
         android:layout_margin="16sp"
         />
 
-    <EditText
-        android:id="@+id/farenheit_degrees"
+    <TextView
+        android:id="@+id/fahrenheit_degrees"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Degrees"
+        android:hint="@string/fahrenheit_degrees"
         android:textSize="26sp"
         android:layout_margin="16sp"
         />
@@ -55,7 +56,7 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_margin="20sp"
-        android:text="Convert"
+        android:text="@string/convert_button"
         android:textSize="16sp" />
 
 </LinearLayout>

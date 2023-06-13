@@ -33,24 +33,6 @@
         android:layout_margin="16sp"
         />
 
-    <TextView
-        android:id="@+id/fahrenheit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/fahrenheit"
-        android:textSize="26sp"
-        android:layout_margin="16sp"
-        />
-
-    <TextView
-        android:id="@+id/fahrenheit_degrees"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/fahrenheit_degrees"
-        android:textSize="26sp"
-        android:layout_margin="16sp"
-        />
-
     <Button
         android:id="@+id/convert_button"
         android:layout_width="match_parent"

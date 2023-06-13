@@ -6,4 +6,11 @@
     <string name="celsius">Celsius:</string>
     <string name="fahrenheit">Fahrenheit:</string>
     <string name="thermometer_description">Thermometer</string>
+    <string name="temperature">Temperature</string>
+    <string name="less_than_10">0-9 °C</string>
+    <string name="cold">Cold</string>
+    <string name="between_10_and_20">10-20 °C</string>
+    <string name="tempered">Tempered</string>
+    <string name="between_21_and_30">21-30 °C</string>
+    <string name="warm">Warm</string>
 </resources>

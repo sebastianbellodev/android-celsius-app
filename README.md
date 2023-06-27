@@ -1,2 +1,17 @@
-# Celsius
-Implemention of temperature app using Android Studio and Java.
+# Android Studio Client
+
+This repository contains a temperature conversion module included in a client application built for Android Studio.
+
+## Key Features
+
+- **Android Studio Client Application:**
+
+## Contribution Guidelines
+
+Contributions to this repository are welcome!
+
+Please ensure that any code contributions adhere to the repository's coding conventions, such as code formatting, naming conventions, and appropriate documentation. By maintaining consistent coding practices, we can collectively improve the quality and usability of the API client library.
+
+## Support and Feedback
+
+If you encounter any issues, have questions, or would like to provide feedback, please create an issue in the repository's issue tracker. The maintainers of this repository will actively review and respond to any inquiries, bug reports, or suggestions.

@@ -4,7 +4,7 @@ This repository contains a temperature conversion module included in a client ap
 
 ## Key Features
 
-- **Android Studio Client Application:**
+- **Android Studio Client Application**
 
 ## Contribution Guidelines
 
